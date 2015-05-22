@@ -91,7 +91,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\TodoParse\DailyValue.csproj">
+    <ProjectReference Include="..\DailyValue\DailyValue.csproj">
       <Project>{5F610EA1-9E35-4870-AE9B-5E18B4B4D5B8}</Project>
       <Name>DailyValue</Name>
     </ProjectReference>

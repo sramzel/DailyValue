@@ -23,7 +23,7 @@
     <MtouchLink>None</MtouchLink>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchDebug>true</MtouchDebug>
-    <AssemblyName>DailyValue</AssemblyName>
+    <AssemblyName>DailyValue.iOS</AssemblyName>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchI18n>
     </MtouchI18n>
@@ -39,7 +39,7 @@
     <MtouchLink>None</MtouchLink>
     <ConsolePause>false</ConsolePause>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <AssemblyName>DailyValue</AssemblyName>
+    <AssemblyName>DailyValue.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -144,7 +144,7 @@
     <Compile Include="ParseStorage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TodoParse\DailyValue.csproj">
+    <ProjectReference Include="..\DailyValue\DailyValue.csproj">
       <Project>{5F610EA1-9E35-4870-AE9B-5E18B4B4D5B8}</Project>
       <Name>DailyValue</Name>
     </ProjectReference>

@@ -46,16 +46,6 @@ namespace TodoXaml.iOS
 			return t;
 		}
 
-		static TodoItem FromParseObject (ParseObject po)
-		{
-			var t = new TodoItem();
-			t.ID = po.ObjectId;
-			t.Name = Convert.ToString(po["Title"]);
-			t.Notes = Convert.ToString (po["Description"]);
-			t.Done = Convert.ToBoolean (po["IsDone"]);
-			return t;
-		}
-
 		public static async Task<List<TodoItem>> GetAll () 
 		{
 			var query = ParseObject.GetQuery ("Task").OrderBy ("Title");
