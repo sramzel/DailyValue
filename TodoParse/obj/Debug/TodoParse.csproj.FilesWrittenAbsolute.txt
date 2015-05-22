@@ -1,0 +1,16 @@
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/obj/Debug/TodoXaml.Views.TodoListXaml.xaml
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/obj/Debug/TodoXaml.Views.TodoItemXaml.xaml
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/obj/Debug/TodoListXaml.xaml.g.cs
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/obj/Debug/TodoItemXaml.xaml.g.cs
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/bin/Debug/QuickTodo.dll.mdb
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/bin/Debug/QuickTodo.dll
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/obj/Debug/QuickTodo.dll
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/obj/Debug/QuickTodo.dll.mdb
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/bin/Debug/SQLite.Net.dll
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/bin/Debug/Xamarin.Forms.Core.dll
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/bin/Debug/Newtonsoft.Json.dll
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/bin/Debug/System.Net.Http.dll
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/bin/Debug/System.Net.Http.Primitives.dll
+/Users/stevenramzel/parse/xamarin/TodoParse/TodoParse/bin/Debug/System.Net.Http.Extensions.dll
