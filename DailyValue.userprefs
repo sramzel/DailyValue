@@ -1,16 +1,12 @@
-﻿<Properties StartupItem="TodoParse/TodoParse.csproj">
+﻿<Properties StartupItem="TodoParse/DailyValue.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TodoParse.Android/ParseStorage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DailyValue.iOS/ParseStorage.cs">
     <Files>
-      <File FileName="TodoParse.iOS/ParseStorage.cs" Line="1" Column="1" />
-      <File FileName="TodoParse.Android/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="TodoParse/Views/TodoItemXaml.xaml" Line="1" Column="1" />
-      <File FileName="TodoParse/Views/TodoListXaml.xaml" Line="1" Column="1" />
-      <File FileName="TodoParse/App.cs" Line="1" Column="1" />
-      <File FileName="TodoParse.iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="TodoParse.iOS/Main.cs" Line="1" Column="1" />
-      <File FileName="TodoParse/Views/TodoListXaml.xaml.cs" Line="1" Column="1" />
-      <File FileName="TodoParse.Android/ParseStorage.cs" Line="47" Column="4" />
+      <File FileName="DailyValue.iOS/ParseStorage.cs" Line="1" Column="1" />
+      <File FileName="DailyValue.Android/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="DailyValue.iOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="DailyValue.iOS/Main.cs" Line="1" Column="1" />
+      <File FileName="DailyValue.Android/ParseStorage.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

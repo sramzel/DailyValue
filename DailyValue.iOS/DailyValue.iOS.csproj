@@ -144,9 +144,9 @@
     <Compile Include="ParseStorage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TodoParse\TodoParse.csproj">
+    <ProjectReference Include="..\TodoParse\DailyValue.csproj">
       <Project>{5F610EA1-9E35-4870-AE9B-5E18B4B4D5B8}</Project>
-      <Name>TodoParse</Name>
+      <Name>DailyValue</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="../packages/Xamarin.Forms.Master.1.0.6461/build/portable-win+net45+wp80+MonoAndroid10+MonoTouch10/Xamarin.Forms.Master.targets" Condition="Exists('../packages/Xamarin.Forms.Master.1.0.6461/build/portable-win+net45+wp80+MonoAndroid10+MonoTouch10/Xamarin.Forms.Master.targets')" />
