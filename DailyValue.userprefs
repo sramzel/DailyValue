@@ -1,8 +1,8 @@
-﻿<Properties StartupItem="DailyValue/DailyValue.csproj">
+﻿<Properties StartupItem="DailyValue/DailyValue.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DailyValue.Android/Speech.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="DailyValue.iOS/ParseStorage.cs" Line="47" Column="4" />
+      <File FileName="DailyValue.iOS/ParseStorage.cs" Line="1" Column="1" />
       <File FileName="DailyValue.Android/MainActivity.cs" Line="1" Column="1" />
       <File FileName="DailyValue.iOS/AppDelegate.cs" Line="1" Column="1" />
       <File FileName="DailyValue.iOS/Main.cs" Line="1" Column="1" />
