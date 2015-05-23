@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
-using TodoXaml;
 using Xamarin.Forms;
-using TodoXaml.iOS;
 using Parse;
-using DailyValue.iOS;
 
-namespace TodoXaml
+namespace DailyValue.iOS
 {
 	// The UIApplicationDelegate for the application. This class is responsible for launching the
 	// User Interface of the application, as well as listening (and optionally responding) to
@@ -19,13 +16,20 @@ namespace TodoXaml
 	{
 		// class-level declarations
 		UIWindow window;
-
+		ParseStorageIOS<TodoItem> parseStorage;
 
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
 			Forms.Init ();
 			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
+
+			#region Parse stuff
+			parseStorage = new ParseStorageIOS<TodoItem>(new TodoParseAdapter());
+
+			App.SetParseStorage (parseStorage);
+
+			#endregion
 
 			#region Text to Speech stuff
 			App.SetTextToSpeech (new Speech ());

@@ -141,9 +141,8 @@
     <Compile Include="Main.cs" />
     <Compile Include="Speech.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="TodoParseStorage.cs" />
-    <Compile Include="TodoParseFactory.cs" />
-    <Compile Include="TodoItemConvertFactory.cs" />
+    <Compile Include="ParseStorageIOS.cs" />
+    <Compile Include="TodoParseAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DailyValue\DailyValue.csproj">

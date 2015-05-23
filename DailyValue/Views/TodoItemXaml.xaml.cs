@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace TodoXaml
+namespace DailyValue
 {
 	public partial class TodoItemXaml : ContentPage
 	{

@@ -1,7 +1,7 @@
 ﻿using System;
 using MonoTouch.AVFoundation;
 
-namespace TodoXaml
+namespace DailyValue
 {
 	public class Speech : ITextToSpeech
 	{

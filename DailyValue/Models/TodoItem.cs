@@ -1,8 +1,7 @@
 ﻿using System;
-using TodoXaml;
 using Newtonsoft.Json;
 
-namespace TodoXaml
+namespace DailyValue
 {
 	public class TodoItem
 	{
@@ -21,6 +20,18 @@ namespace TodoXaml
 
 		[JsonProperty(PropertyName = "complete")]
 		public bool Done { get; set; }
+
+		public string GetClass(){
+			return "Task";
+		}
+
+		public string GetIdField(){
+			return "objectId";
+		}
+
+		public string GetSortField(){
+			return "title";
+		}
 	}
 }
 

@@ -1,10 +1,24 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace TodoXaml
+namespace DailyValue
 {
 	public static class App
 	{
+		#region Parse stuff
+		static IParseStorage<TodoItem> parseStorage;
+
+		public static IParseStorage<TodoItem> ParseStorage {
+			get { return parseStorage; }
+			set { parseStorage = value; }
+		}
+
+		public static void SetParseStorage (IParseStorage<TodoItem> todoItemManager)
+		{
+			ParseStorage = todoItemManager;
+		}
+		#endregion
+
 		public static Page GetMainPage ()
 		{
 			var tdlx = new TodoListXaml ();

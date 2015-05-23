@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TodoXaml
+namespace DailyValue
 {
 	public static class Constants
 	{

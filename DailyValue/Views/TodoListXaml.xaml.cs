@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 // http://forums.xamarin.com/discussion/11279/quickui-xaml-gets-started/
 
-namespace TodoXaml
+namespace DailyValue
 {
 	public partial class TodoListXaml : ContentPage
 	{
@@ -44,7 +44,7 @@ namespace TodoXaml
 		protected async override void OnAppearing ()
 		{
 			base.OnAppearing ();
-			//listView.ItemsSource = await App.TodoManager.GetTasksAsync ();
+			listView.ItemsSource = await App.ParseStorage.RefreshDataAsync ();
 		}
 
 		public void OnItemSelected (object sender, SelectedItemChangedEventArgs e) {
