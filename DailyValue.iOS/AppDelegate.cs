@@ -25,6 +25,7 @@ namespace DailyValue.iOS
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 
 			#region Parse stuff
+			ParseClient.Initialize (Constants.ApplicationId, Constants.Key);
 			parseStorage = new ParseStorageIOS<TodoItem>(new TodoParseAdapter());
 
 			App.SetParseStorage (parseStorage);
@@ -46,4 +47,3 @@ namespace DailyValue.iOS
 		}
 	}
 }
-

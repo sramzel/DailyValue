@@ -13,8 +13,6 @@ namespace DailyValue.iOS
 		public ParseStorageIOS(IParseAdapter<M> parseFactory) : base(parseFactory)
 		{
 			Items = new List<M>();
-
-			ParseClient.Initialize (Constants.ApplicationId, Constants.Key);
 		}
 
 		async public override Task<List<M>> RefreshDataAsync()
