@@ -143,6 +143,7 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="ParseStorageIOS.cs" />
     <Compile Include="TodoParseAdapter.cs" />
+    <Compile Include="ParseObjectIOS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DailyValue\DailyValue.csproj">

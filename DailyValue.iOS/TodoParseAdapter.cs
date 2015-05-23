@@ -15,11 +15,10 @@ namespace DailyValue.iOS
 		}
 
 		public string GetSortField () {
-			return"title";
+			return"Title";
 		}
 
-		public TodoItem From (Object o){
-			var po = o as ParseObject;
+		public TodoItem From (IParseObject po){
 			var t = new TodoItem();
 			t.ID = po.ObjectId;
 			t.Name = Convert.ToString(po["Title"]);
@@ -28,8 +27,8 @@ namespace DailyValue.iOS
 			return t;
 		}
 
-		public Object Parse (TodoItem todo){
-			var po = new ParseObject("Task");
+		public IParseObject Parse (TodoItem todo){
+			var po = new ParseObjectIOS("Task");
 			if (todo.ID != string.Empty)
 				po.ObjectId = todo.ID;
 			po["Title"] = todo.Name;

@@ -9,8 +9,8 @@ namespace DailyValue
 		string GetIdField ();
 		string GetSortField ();
 
-		M From (Object o);
-		Object Parse (M model);
+		M From (IParseObject o);
+		IParseObject Parse (M model);
 	}
 }
 

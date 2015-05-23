@@ -27,7 +27,7 @@ namespace DailyValue.iOS
 
 			var tl = new List<M> ();
 			foreach (var t in ie) {
-				tl.Add (mConvertFactory.From (t));
+				tl.Add (mConvertFactory.From (new ParseObjectIOS(t)));
 			}
 
 			return tl;
@@ -40,7 +40,7 @@ namespace DailyValue.iOS
 
 			var Items = new List<M> ();
 			foreach (var t in ie) {
-				Items.Add (mConvertFactory.From (t));
+				Items.Add (mConvertFactory.From (new ParseObjectIOS(t)));
 			}
 
 			return Items;
@@ -55,7 +55,7 @@ namespace DailyValue.iOS
 		{
 			var query = ParseObject.GetQuery(mConvertFactory.GetClassName()).WhereEqualTo(mConvertFactory.GetIdField(), id);
 			var t = await query.FirstAsync();
-			return mConvertFactory.From (t);
+			return mConvertFactory.From (new ParseObjectIOS(t));
 		}
 
 		public override async Task DeleteItemAsync(M item)
