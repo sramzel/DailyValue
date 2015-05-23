@@ -6,10 +6,12 @@ namespace DailyValue
 {
 	public abstract class IParseStorage<M>
 	{
-		protected IParseAdapter<M> mConvertFactory;
+		protected IParseAdapter<M> ParseFactory {
+			get;
+		}
 
 		public IParseStorage(IParseAdapter<M> parseFactory){
-			mConvertFactory = parseFactory;
+			ParseFactory = parseFactory;
 		}
 
 		public abstract Task<List<M>> RefreshDataAsync();

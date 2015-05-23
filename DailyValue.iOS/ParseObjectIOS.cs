@@ -2,6 +2,7 @@
 using Parse;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace DailyValue.iOS
 {
@@ -25,6 +26,14 @@ namespace DailyValue.iOS
 		public virtual Object this[
 			string key
 		] { get{return parseObject [key];} set{parseObject [key] = value;} }
+	
+		public Task SaveAsync(){
+			return parseObject.SaveAsync ();
+		}
+
+		public Task DeleteAsync(){
+			return parseObject.DeleteAsync ();
+		}
 	}
 }
 

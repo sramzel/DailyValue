@@ -19,5 +19,9 @@ namespace DailyValue
 			get;
 			set;
 		}
+
+		Task SaveAsync ();
+
+		Task DeleteAsync ();
 	}
 }

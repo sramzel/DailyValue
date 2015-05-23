@@ -14,33 +14,17 @@ namespace DailyValue.iOS
 		{
 			Items = new List<M>();
 
-			// https://parse.com/apps/YOUR_APP_NAME/edit#app_keys
-			// ApplicationId, Windows/.NET/Client key
-			//ParseClient.Initialize ("APPLICATION_ID", ".NET_KEY");
 			ParseClient.Initialize (Constants.ApplicationId, Constants.Key);
-		}
-
-		public async Task<List<M>> GetAll (IParseAdapter<M> descriptor) 
-		{
-			var query = ParseObject.GetQuery (descriptor.GetClassName()).OrderBy (descriptor.GetSortField());
-			var ie = await query.FindAsync ();
-
-			var tl = new List<M> ();
-			foreach (var t in ie) {
-				tl.Add (mConvertFactory.From (new ParseObjectIOS(t)));
-			}
-
-			return tl;
 		}
 
 		async public override Task<List<M>> RefreshDataAsync()
 		{
-			var query = ParseObject.GetQuery (mConvertFactory.GetClassName()).OrderBy (mConvertFactory.GetSortField());
+			var query = ParseObject.GetQuery (ParseFactory.GetClassName()).OrderBy (ParseFactory.GetSortField());
 			var ie = await query.FindAsync ();
 
 			var Items = new List<M> ();
 			foreach (var t in ie) {
-				Items.Add (mConvertFactory.From (new ParseObjectIOS(t)));
+				Items.Add (ParseFactory.From (new ParseObjectIOS(t)));
 			}
 
 			return Items;
@@ -48,21 +32,21 @@ namespace DailyValue.iOS
 
 		public override async Task SaveItemAsync(M todoItem)
 		{
-			await ((ParseObject) mConvertFactory.Parse (todoItem)).SaveAsync ();
+			await ParseFactory.Parse (todoItem).SaveAsync ();
 		}
 
 		public override async Task<M> GetItemAsync(string id)
 		{
-			var query = ParseObject.GetQuery(mConvertFactory.GetClassName()).WhereEqualTo(mConvertFactory.GetIdField(), id);
+			var query = ParseObject.GetQuery(ParseFactory.GetClassName()).WhereEqualTo(ParseFactory.GetIdField(), id);
 			var t = await query.FirstAsync();
-			return mConvertFactory.From (new ParseObjectIOS(t));
+			return ParseFactory.From (new ParseObjectIOS(t));
 		}
 
 		public override async Task DeleteItemAsync(M item)
 		{
 			try 
 			{
-				await ((ParseObject) mConvertFactory.Parse(item)).DeleteAsync();
+				await ((ParseObject) ParseFactory.Parse(item)).DeleteAsync();
 			} 
 			catch (Exception e) 
 			{
