@@ -5,9 +5,13 @@ namespace DailyValue
 {
 	public interface IParseAdapter<M>
 	{		
-		string GetClassName ();
-		string GetIdField ();
-		string GetSortField ();
+		string ClassName {
+			get;
+		}
+
+		string IdField {
+			get;
+		}
 
 		M From (IParseObject o);
 		IParseObject Parse (M model);

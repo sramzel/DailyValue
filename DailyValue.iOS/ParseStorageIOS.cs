@@ -19,7 +19,7 @@ namespace DailyValue.iOS
 
 		async public override Task<List<M>> RefreshDataAsync()
 		{
-			var query = ParseObject.GetQuery (ParseFactory.GetClassName()).OrderBy (ParseFactory.GetSortField());
+			var query = ParseObject.GetQuery (ParseFactory.ClassName);
 			var ie = await query.FindAsync ();
 
 			var Items = new List<M> ();
@@ -37,7 +37,7 @@ namespace DailyValue.iOS
 
 		public override async Task<M> GetItemAsync(string id)
 		{
-			var query = ParseObject.GetQuery(ParseFactory.GetClassName()).WhereEqualTo(ParseFactory.GetIdField(), id);
+			var query = ParseObject.GetQuery(ParseFactory.ClassName).WhereEqualTo(ParseFactory.IdField, id);
 			var t = await query.FirstAsync();
 			return ParseFactory.From (new ParseObjectIOS(t));
 		}
@@ -54,5 +54,8 @@ namespace DailyValue.iOS
 			}
 		}
 
+		public override IParseObject CreateObject(string className){
+			return new ParseObjectIOS (className);
+		}
 	}
 }

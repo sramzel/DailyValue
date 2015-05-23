@@ -22,6 +22,7 @@ namespace DailyValue
 
 		public abstract Task DeleteItemAsync (M id);
 
+		public abstract IParseObject CreateObject (string className);
 	}
 }
 
