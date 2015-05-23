@@ -8,18 +8,18 @@ namespace TodoXaml
 	/// <summary>
 	/// Manager classes are an abstraction on the data access layers
 	/// </summary>
-	public class TodoItemManager {
+	public class TodoItemManager<P> {
 
-		IParseStorage storage;
+		IParseStorage<TodoItem, P> storage;
 
-		public TodoItemManager (IParseStorage storage) 
+		public TodoItemManager (IParseStorage<TodoItem, P> storage) 
 		{
 			this.storage = storage;
 		}
 
 		public Task<TodoItem> GetTaskAsync(string id)
 		{
-			return storage.GetTodoItemAsync(id);
+			return storage.GetItemAsync(id);
 		}
 
 		public Task<List<TodoItem>> GetTasksAsync ()
@@ -29,12 +29,12 @@ namespace TodoXaml
 
 		public Task SaveTaskAsync (TodoItem item)
 		{
-			return storage.SaveTodoItemAsync(item);
+			return storage.SaveItemAsync(item);
 		}
 
 		public Task DeleteTaskAsync (TodoItem item)
 		{
-			return storage.DeleteTodoItemAsync(item);
+			return storage.DeleteItemAsync(item);
 		}
 	}
 }

@@ -4,15 +4,21 @@ using System.Collections.Generic;
 
 namespace TodoXaml
 {
-	public interface IParseStorage
+	public abstract class IParseStorage<M, P>
 	{
-		Task<List<TodoItem>> RefreshDataAsync();
+		protected IConvertFactory<M, P> mConvertFactory;
 
-		Task<TodoItem> GetTodoItemAsync (string id);
+		public IParseStorage(IConvertFactory<M, P> parseFactory){
+			mConvertFactory = parseFactory;
+		}
 
-		Task SaveTodoItemAsync (TodoItem item);
+		public abstract Task<List<M>> RefreshDataAsync();
 
-		Task DeleteTodoItemAsync (TodoItem id);
+		public abstract Task<M> GetItemAsync (string id);
+
+		public abstract Task SaveItemAsync (M item);
+
+		public abstract Task DeleteItemAsync (M id);
 	}
 }
 

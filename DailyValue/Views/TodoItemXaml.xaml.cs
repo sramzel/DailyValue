@@ -13,14 +13,14 @@ namespace TodoXaml
 		async void OnSaveActivated (object sender, EventArgs e)
 		{
 			var todoItem = (TodoItem)BindingContext;
-			await App.TodoManager.SaveTaskAsync(todoItem);
+			//await App.TodoManager.SaveTaskAsync(todoItem);
 			await this.Navigation.PopAsync();
 		}
 
 		async void OnDeleteActivated (object sender, EventArgs e)
 		{
 			var todoItem = (TodoItem)BindingContext;
-			await App.TodoManager.DeleteTaskAsync(todoItem);
+			//await App.TodoManager.DeleteTaskAsync(todoItem);
 			await this.Navigation.PopAsync();
 		}
 

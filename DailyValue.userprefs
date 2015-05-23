@@ -1,13 +1,21 @@
 ﻿<Properties StartupItem="DailyValue/DailyValue.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DailyValue.iOS/ParseObjectIOS.cs">
     <Files>
-      <File FileName="DailyValue.iOS/ParseStorage.cs" Line="1" Column="1" />
-      <File FileName="DailyValue.Android/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="DailyValue.iOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="DailyValue.iOS/TodoParseStorage.cs" Line="15" Column="3" />
+      <File FileName="DailyValue/Data/IParseStorage.cs" Line="21" Column="10" />
+      <File FileName="DailyValue.iOS/AppDelegate.cs" Line="5" Column="23" />
+      <File FileName="DailyValue/Views/TodoItemXaml.xaml.cs" Line="23" Column="19" />
+      <File FileName="DailyValue/Views/TodoListXaml.xaml.cs" Line="1" Column="1" />
+      <File FileName="DailyValue/Views/TodoItemXaml.xaml" Line="1" Column="1" />
+      <File FileName="DailyValue/App.cs" Line="19" Column="22" />
+      <File FileName="DailyValue/Data/TodoItemManager.cs" Line="13" Column="11" />
+      <File FileName="DailyValue/Data/IConvertFactory.cs" Line="5" Column="34" />
+      <File FileName="DailyValue.iOS/TodoParseFactory.cs" Line="6" Column="34" />
+      <File FileName="DailyValue/Data/IParseObject.cs" Line="1" Column="1" />
+      <File FileName="DailyValue/obj/Debug/TodoItemXaml.xaml.g.cs" Line="19" Column="23" />
+      <File FileName="DailyValue.iOS/ParseObjectIOS.cs" Line="3" Column="12" />
       <File FileName="DailyValue.iOS/Main.cs" Line="1" Column="1" />
-      <File FileName="DailyValue.Android/ParseStorage.cs" Line="1" Column="1" />
-      <File FileName="DailyValue.Android/Speech.cs" Line="5" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
