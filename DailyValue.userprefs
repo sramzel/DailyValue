@@ -1,29 +1,29 @@
 ﻿<Properties StartupItem="DailyValue/DailyValue.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DailyValue.Android/Speech.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DailyValue/ModelAdapters/TodoParseAdapter.cs">
     <Files>
-      <File FileName="DailyValue.iOS/ParseObjectIOS.cs" Line="35" Column="11" />
-      <File FileName="DailyValue.iOS/ParseStorageIOS.cs" Line="57" Column="19" NotebookId="1" />
-      <File FileName="DailyValue/Data/IParseStorage.cs" Line="25" Column="63" NotebookId="1" />
-      <File FileName="DailyValue.iOS/AppDelegate.cs" Line="28" Column="43" NotebookId="1" />
-      <File FileName="DailyValue/Views/TodoItemXaml.xaml.cs" Line="16" Column="35" NotebookId="1" />
-      <File FileName="DailyValue/Views/TodoListXaml.xaml.cs" Line="47" Column="60" NotebookId="1" />
-      <File FileName="DailyValue/Views/TodoItemXaml.xaml" Line="4" Column="24" NotebookId="1" />
-      <File FileName="DailyValue/App.cs" Line="16" Column="37" NotebookId="1" />
+      <File FileName="DailyValue.iOS/ParseObjectIOS.cs" Line="9" Column="29" />
+      <File FileName="DailyValue.iOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="DailyValue.iOS/ParseStorageIOS.cs" Line="37" Column="61" />
+      <File FileName="DailyValue/ModelAdapters/TodoParseAdapter.cs" Line="6" Column="33" />
+      <File FileName="DailyValue/Views/TodoItemXaml.xaml.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="DailyValue/Views/TodoListXaml.xaml.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="DailyValue/Views/TodoItemXaml.xaml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="DailyValue/App.cs" Line="1" Column="1" NotebookId="1" />
       <File FileName="DailyValue/Data/TodoItemManager.cs" Line="1" Column="1" NotebookId="1" />
       <File FileName="DailyValue/Data/IConverter.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Data/IParseDescriptor.cs" Line="6" Column="3" NotebookId="1" />
+      <File FileName="DailyValue/Data/IParseDescriptor.cs" Line="1" Column="1" NotebookId="1" />
       <File FileName="DailyValue/obj/Debug/TodoItemXaml.xaml.g.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue.iOS/Main.cs" Line="7" Column="21" NotebookId="1" />
-      <File FileName="DailyValue/Models/TodoItem.cs" Line="6" Column="23" NotebookId="1" />
-      <File FileName="DailyValue/ITextToSpeech.cs" Line="3" Column="21" NotebookId="1" />
-      <File FileName="DailyValue/Constants.cs" Line="3" Column="21" NotebookId="1" />
+      <File FileName="DailyValue.iOS/Main.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="DailyValue/Models/TodoItem.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="DailyValue/ITextToSpeech.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="DailyValue/Constants.cs" Line="1" Column="1" NotebookId="1" />
       <File FileName="DailyValue/DailyValue.csproj" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Views/TodoListXaml.xaml" Line="4" Column="24" NotebookId="1" />
-      <File FileName="DailyValue.iOS/Speech.cs" Line="4" Column="21" NotebookId="1" />
-      <File FileName="DailyValue/Data/IParseAdapter.cs" Line="11" Column="3" NotebookId="1" />
-      <File FileName="DailyValue/Data/IParseObject.cs" Line="12" Column="3" NotebookId="1" />
-      <File FileName="DailyValue.Android/Speech.cs" Line="13" Column="23" NotebookId="1" />
+      <File FileName="DailyValue/Views/TodoListXaml.xaml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="DailyValue.iOS/Speech.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="DailyValue/Data/IParseObject.cs" Line="25" Column="23" NotebookId="1" />
+      <File FileName="DailyValue.Android/Speech.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="DailyValue/Data/IParseAdapter.cs" Line="15" Column="10" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

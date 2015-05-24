@@ -26,7 +26,7 @@ namespace DailyValue.iOS
 
 			#region Parse stuff
 			ParseClient.Initialize (Constants.ApplicationId, Constants.Key);
-			parseStorage = new ParseStorageIOS<TodoItem>(new TodoParseAdapter());
+			parseStorage = new ParseStorageIOS<TodoItem>(TodoItem.CLASS_NAME);
 
 			App.SetParseStorage (parseStorage);
 

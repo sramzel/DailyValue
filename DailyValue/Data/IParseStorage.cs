@@ -1,19 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace DailyValue
 {
 	public abstract class IParseStorage<M>
 	{
-		protected IParseAdapter<M> ParseFactory {
-			get;
-		}
-
-		public IParseStorage(IParseAdapter<M> parseFactory){
-			ParseFactory = parseFactory;
-		}
-
 		public abstract Task<List<M>> RefreshDataAsync();
 
 		public abstract Task<M> GetItemAsync (string id);
@@ -22,7 +15,22 @@ namespace DailyValue
 
 		public abstract Task DeleteItemAsync (M id);
 
-		public abstract IParseObject CreateObject (string className);
+		public abstract PclParseObject CreateObject ();
+
+		public static M From (PclParseObject po){
+			string json = JsonConvert.SerializeObject (po);
+			return JsonConvert.DeserializeObject<M> (json);
+		}
+
+		public static PclParseObject Parse(M o){
+			string json = JsonConvert.SerializeObject (o);
+			Dictionary<string, Object> d = JsonConvert.DeserializeObject<Dictionary<string, Object>> (json);
+			var po = App.ParseStorage.CreateObject ();
+			foreach (string key in d.Keys){
+				po [key] = d [key];
+			}
+			return po;
+		}
 	}
 }
 

@@ -7,22 +7,20 @@ namespace DailyValue.iOS
 {
 	public class ParseStorageIOS<M> :IParseStorage<M>
 	{
-		public List<M> Items { get; private set;}
+		public string ClassName{ get; private set;}
 
-		// Constructor
-		public ParseStorageIOS(IParseAdapter<M> parseFactory) : base(parseFactory)
-		{
-			Items = new List<M>();
+		public ParseStorageIOS(string className){
+			ClassName = className;
 		}
 
-		async public override Task<List<M>> RefreshDataAsync()
+		public override async Task<List<M>> RefreshDataAsync()
 		{
-			var query = ParseObject.GetQuery (ParseFactory.ClassName);
+			var query = ParseObject.GetQuery (ClassName);
 			var ie = await query.FindAsync ();
 
 			var Items = new List<M> ();
 			foreach (var t in ie) {
-				Items.Add (ParseFactory.From (new ParseObjectIOS(t)));
+				Items.Add (From (new ParseObjectIOS(t)));
 			}
 
 			return Items;
@@ -30,21 +28,21 @@ namespace DailyValue.iOS
 
 		public override async Task SaveItemAsync(M todoItem)
 		{
-			await ParseFactory.Parse (todoItem).SaveAsync ();
+			await Parse (todoItem).SaveAsync ();
 		}
 
 		public override async Task<M> GetItemAsync(string id)
 		{
-			var query = ParseObject.GetQuery(ParseFactory.ClassName).WhereEqualTo(ParseFactory.IdField, id);
+			var query = ParseObject.GetQuery(ClassName).WhereEqualTo(ClassName, id);
 			var t = await query.FirstAsync();
-			return ParseFactory.From (new ParseObjectIOS(t));
+			return From (new ParseObjectIOS(t));
 		}
 
 		public override async Task DeleteItemAsync(M item)
 		{
 			try 
 			{
-				await ((ParseObject) ParseFactory.Parse(item)).DeleteAsync();
+				await Parse(item).DeleteAsync();
 			} 
 			catch (Exception e) 
 			{
@@ -52,8 +50,8 @@ namespace DailyValue.iOS
 			}
 		}
 
-		public override IParseObject CreateObject(string className){
-			return new ParseObjectIOS (className);
+		public override PclParseObject CreateObject(){
+			return new ParseObjectIOS (ClassName);
 		}
 	}
 }

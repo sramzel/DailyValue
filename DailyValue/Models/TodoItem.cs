@@ -5,33 +5,20 @@ namespace DailyValue
 {
 	public class TodoItem
 	{
+		public const string CLASS_NAME = "Task";
+
 		public TodoItem ()
 		{
 		}
 
-		[JsonProperty(PropertyName = "id")]
-		public string ID { get; set; }
-
-		[JsonProperty(PropertyName = "text")]
+		[JsonProperty(PropertyName = "Title")]
 		public string Name { get; set; }
 
-		[JsonProperty(PropertyName = "notes")]
+		[JsonProperty(PropertyName = "Description")]
 		public string Notes { get; set; }
 
-		[JsonProperty(PropertyName = "complete")]
+		[JsonProperty(PropertyName = "IsDone")]
 		public bool Done { get; set; }
-
-		public string GetClass(){
-			return "Task";
-		}
-
-		public string GetIdField(){
-			return "objectId";
-		}
-
-		public string GetSortField(){
-			return "title";
-		}
 	}
 }
 

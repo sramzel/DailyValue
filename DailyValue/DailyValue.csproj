@@ -44,9 +44,7 @@
     </Compile>
     <Compile Include="Constants.cs" />
     <Compile Include="Data\IParseStorage.cs" />
-    <Compile Include="Data\IParseAdapter.cs" />
-    <Compile Include="Data\IParseObject.cs" />
-    <Compile Include="ModelAdapters\TodoParseAdapter.cs" />
+    <Compile Include="Data\PclParseObject.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="../packages/Xamarin.Forms.1.0.6188/build/portable-win+net45+wp80+MonoAndroid10+MonoTouch10/Xamarin.Forms.targets" />
