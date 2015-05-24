@@ -1,30 +1,31 @@
 ﻿<Properties StartupItem="DailyValue/DailyValue.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DailyValue/ModelAdapters/TodoParseAdapter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DailyValue.iOS/AppDelegate.cs">
     <Files>
-      <File FileName="DailyValue.iOS/ParseObjectIOS.cs" Line="9" Column="29" />
-      <File FileName="DailyValue.iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="DailyValue.iOS/ParseStorageIOS.cs" Line="37" Column="61" />
-      <File FileName="DailyValue/ModelAdapters/TodoParseAdapter.cs" Line="6" Column="33" />
-      <File FileName="DailyValue/Views/TodoItemXaml.xaml.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Views/TodoListXaml.xaml.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Views/TodoItemXaml.xaml" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/App.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Data/TodoItemManager.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Data/IConverter.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Data/IParseDescriptor.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/obj/Debug/TodoItemXaml.xaml.g.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue.iOS/Main.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Models/TodoItem.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/ITextToSpeech.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Constants.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/DailyValue.csproj" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Views/TodoListXaml.xaml" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue.iOS/Speech.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Data/IParseObject.cs" Line="25" Column="23" NotebookId="1" />
-      <File FileName="DailyValue.Android/Speech.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DailyValue/Data/IParseAdapter.cs" Line="15" Column="10" NotebookId="1" />
+      <File FileName="DailyValue/Data/PclParseObject.cs" Line="1" Column="1" />
+      <File FileName="DailyValue.iOS/ParseObjectIOS.cs" Line="1" Column="1" />
+      <File FileName="DailyValue.iOS/ParseStorageIOS.cs" Line="41" Column="24" />
+      <File FileName="DailyValue/Models/TodoItem.cs" Line="1" Column="1" />
+      <File FileName="DailyValue/Views/TodoListXaml.xaml.cs" Line="1" Column="1" />
+      <File FileName="DailyValue/Views/TodoItemXaml.xaml.cs" Line="1" Column="1" />
+      <File FileName="DailyValue.iOS/AppDelegate.cs" Line="30" Column="4" />
+      <File FileName="DailyValue/App.cs" Line="14" Column="4" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DailyValue" expanded="True">
+            <Node name="Targets" expanded="True">
+              <Node name="DailyValue.Android" expanded="True" />
+              <Node name="DailyValue.iOS" expanded="True">
+                <Node name="AppDelegate.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="DailyValue" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

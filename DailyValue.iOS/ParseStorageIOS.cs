@@ -5,7 +5,7 @@ using Parse;
 
 namespace DailyValue.iOS
 {
-	public class ParseStorageIOS<M> :IParseStorage<M>
+	public class ParseStorageIOS<M> :BaseParseStorage<M>
 	{
 		public string ClassName{ get; private set;}
 
@@ -16,7 +16,7 @@ namespace DailyValue.iOS
 		public override async Task<List<M>> RefreshDataAsync()
 		{
 			var query = ParseObject.GetQuery (ClassName);
-			var ie = await query.FindAsync ();
+			var ie = await query.Limit(20).FindAsync ();
 
 			var Items = new List<M> ();
 			foreach (var t in ie) {

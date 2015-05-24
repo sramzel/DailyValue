@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace DailyValue
 {
-	public abstract class IParseStorage<M>
+	public abstract class BaseParseStorage<M>
 	{
 		public abstract Task<List<M>> RefreshDataAsync();
 
@@ -25,7 +25,7 @@ namespace DailyValue
 		public static PclParseObject Parse(M o){
 			string json = JsonConvert.SerializeObject (o);
 			Dictionary<string, Object> d = JsonConvert.DeserializeObject<Dictionary<string, Object>> (json);
-			var po = App.ParseStorage.CreateObject ();
+			var po = App.Fndds.MainFoodDesc.CreateObject ();
 			foreach (string key in d.Keys){
 				po [key] = d [key];
 			}

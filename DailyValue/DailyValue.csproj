@@ -34,7 +34,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App.cs" />
-    <Compile Include="Models\TodoItem.cs" />
     <Compile Include="ITextToSpeech.cs" />
     <Compile Include="Views\TodoItemXaml.xaml.cs">
       <DependentUpon>TodoItemXaml.xaml</DependentUpon>
@@ -43,8 +42,10 @@
       <DependentUpon>TodoListXaml.xaml</DependentUpon>
     </Compile>
     <Compile Include="Constants.cs" />
-    <Compile Include="Data\IParseStorage.cs" />
     <Compile Include="Data\PclParseObject.cs" />
+    <Compile Include="Data\BaseParseStorage.cs" />
+    <Compile Include="FnddsDatabase.cs" />
+    <Compile Include="Models\MainFoodDesc.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="../packages/Xamarin.Forms.1.0.6188/build/portable-win+net45+wp80+MonoAndroid10+MonoTouch10/Xamarin.Forms.targets" />

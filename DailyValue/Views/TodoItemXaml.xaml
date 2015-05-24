@@ -7,13 +7,10 @@
     	<StackLayout VerticalOptions="StartAndExpand">
 
 	        <Label Text="Name" />
-	        <Entry Text="{Binding Path=Name}" x:Name="nameEntry" Placeholder="task name" />
+	        <Entry Text="{Binding Path=AbbreviatedDescription}" x:Name="nameEntry" Placeholder="task name" />
 
 			<Label Text="Notes" />
-	        <Entry Text="{Binding Path=Notes}" x:Name="notesEntry" />
-
-	        <Label Text="Done" />
-	        <Switch IsToggled="{Binding Path=Done}" x:Name="DoneSwitch" />
+	        <Entry Text="{Binding Path=MainFoodDescription}" x:Name="notesEntry" />
 
 	        <Button Text="Save" Clicked="OnSaveActivated" />
 			

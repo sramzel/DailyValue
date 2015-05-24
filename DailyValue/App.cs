@@ -6,16 +6,11 @@ namespace DailyValue
 	public static class App
 	{
 		#region Parse stuff
-		static IParseStorage<TodoItem> parseStorage;
+		static FnddsDatabase parseDatabase;
 
-		public static IParseStorage<TodoItem> ParseStorage {
-			get { return parseStorage; }
-			set { parseStorage = value; }
-		}
-
-		public static void SetParseStorage (IParseStorage<TodoItem> todoItemManager)
-		{
-			ParseStorage = todoItemManager;
+		public static FnddsDatabase Fndds {
+			get { return parseDatabase; }
+			set { parseDatabase = value; }
 		}
 		#endregion
 

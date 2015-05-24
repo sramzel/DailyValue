@@ -16,7 +16,7 @@ namespace DailyValue.iOS
 	{
 		// class-level declarations
 		UIWindow window;
-		ParseStorageIOS<TodoItem> parseStorage;
+		ParseStorageIOS<MainFoodDesc> parseStorage;
 
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
@@ -26,9 +26,8 @@ namespace DailyValue.iOS
 
 			#region Parse stuff
 			ParseClient.Initialize (Constants.ApplicationId, Constants.Key);
-			parseStorage = new ParseStorageIOS<TodoItem>(TodoItem.CLASS_NAME);
 
-			App.SetParseStorage (parseStorage);
+			App.Fndds = new FnddsDatabase(new ParseStorageIOS<MainFoodDesc>(MainFoodDesc.CLASS_NAME));
 
 			#endregion
 
