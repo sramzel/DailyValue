@@ -15,11 +15,7 @@ namespace DailyValue
 		[JsonProperty(PropertyName = "foodDescription")]
 		public IList<KeyValuePair<string, Object>> FD {
 			set {
-				var d = new Dictionary<string, Object> ();
-				foreach (KeyValuePair<string, Object> kv in value) {
-					d[kv.Key] = kv.Value;
-				}
-				FoodDescription = JsonConvert.DeserializeObject<MainFoodDesc> (JsonConvert.SerializeObject (d));
+				FoodDescription = Utils.DeserializeObject<MainFoodDesc> (value);
 			}
 		}
 
