@@ -16,7 +16,6 @@ namespace DailyValue.iOS
 	{
 		// class-level declarations
 		UIWindow window;
-		ParseStorageIOS<MainFoodDesc> parseStorage;
 
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
@@ -27,7 +26,10 @@ namespace DailyValue.iOS
 			#region Parse stuff
 			ParseClient.Initialize (Constants.ApplicationId, Constants.Key);
 
-			App.Fndds = new FnddsDatabase(new ParseStorageIOS<MainFoodDesc>(MainFoodDesc.CLASS_NAME));
+			App.Fndds = new FnddsDatabase(
+				new ParseStorageIOS<MainFoodDesc>(MainFoodDesc.CLASS_NAME),
+				new ParseStorageIOS<FoodWeights>(FoodWeights.CLASS_NAME)
+			);
 
 			#endregion
 

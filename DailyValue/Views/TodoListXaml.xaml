@@ -9,7 +9,7 @@
 		    <DataTemplate>
 		      <ViewCell>
 		     	 <StackLayout Padding="20,0,0,0" HorizontalOptions="StartAndExpand" Orientation="Horizontal">
-		        	<Label Text="{Binding AbbreviatedDescription}" YAlign="Center" />
+		        	<Label Text="{Binding FoodDescription.MainFoodDescription}" YAlign="Center" />
 		        	<Image Source="check" />
 		         </StackLayout>
 		      </ViewCell>

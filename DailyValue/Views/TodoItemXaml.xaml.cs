@@ -12,15 +12,15 @@ namespace DailyValue
 
 		async void OnSaveActivated (object sender, EventArgs e)
 		{
-			var todoItem = (MainFoodDesc)BindingContext;
-			await App.Fndds.MainFoodDesc.SaveItemAsync(todoItem);
+			var todoItem = (FoodWeights)BindingContext;
+			await App.Fndds.FoodWeights.SaveItemAsync(todoItem);
 			await this.Navigation.PopAsync();
 		}
 
 		async void OnDeleteActivated (object sender, EventArgs e)
 		{
-			var todoItem = (MainFoodDesc)BindingContext;
-			await App.Fndds.MainFoodDesc.DeleteItemAsync(todoItem);
+			var todoItem = (FoodWeights)BindingContext;
+			await App.Fndds.FoodWeights.DeleteItemAsync(todoItem);
 			await this.Navigation.PopAsync();
 		}
 
@@ -31,8 +31,8 @@ namespace DailyValue
 
 		void OnSpeakActivated (object sender, EventArgs e)
 		{
-			var todoItem = (MainFoodDesc)BindingContext;
-			App.Speech.Speak(todoItem.AbbreviatedDescription + " " + todoItem.MainFoodDescription);
+			var todoItem = (FoodWeights)BindingContext;
+			App.Speech.Speak(todoItem.FoodCode + " " + todoItem.Score);
 		}
 	}
 }

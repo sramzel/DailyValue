@@ -12,14 +12,14 @@ namespace DailyValue
 			InitializeComponent ();
 
 			var tbi = new ToolbarItem ("+", null, () => {
-				var todoItem = new MainFoodDesc();
+				var todoItem = new FoodWeights();
 				var todoPage = new TodoItemXaml();
 				todoPage.BindingContext = todoItem;
 				Navigation.PushAsync(todoPage);
 			}, 0, 0);
 			if (Device.OS == TargetPlatform.Android) { // BUG: Android doesn't support the icon being null
 				tbi = new ToolbarItem ("+", "plus", () => {
-					var todoItem = new MainFoodDesc();
+					var todoItem = new FoodWeights();
 					var todoPage = new TodoItemXaml();
 					todoPage.BindingContext = todoItem;
 					Navigation.PushAsync(todoPage);
@@ -44,11 +44,11 @@ namespace DailyValue
 		protected async override void OnAppearing ()
 		{
 			base.OnAppearing ();
-			listView.ItemsSource = await App.Fndds.MainFoodDesc.RefreshDataAsync ();
+			listView.ItemsSource = await App.Fndds.FoodWeights.RefreshDataAsync ();
 		}
 
 		public void OnItemSelected (object sender, SelectedItemChangedEventArgs e) {
-			var todoItem = e.SelectedItem as MainFoodDesc;
+			var todoItem = e.SelectedItem as FoodWeights;
 			var todoPage = new TodoItemXaml();
 			todoPage.BindingContext = todoItem;
 			Navigation.PushAsync(todoPage);

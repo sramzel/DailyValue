@@ -7,10 +7,10 @@
     	<StackLayout VerticalOptions="StartAndExpand">
 
 	        <Label Text="Name" />
-	        <Entry Text="{Binding Path=AbbreviatedDescription}" x:Name="nameEntry" Placeholder="task name" />
+	        <Entry Text="{Binding Path=Score}" x:Name="nameEntry" Placeholder="task name" />
 
 			<Label Text="Notes" />
-	        <Entry Text="{Binding Path=MainFoodDescription}" x:Name="notesEntry" />
+	        <Entry Text="{Binding Path=Score}" x:Name="notesEntry" />
 
 	        <Button Text="Save" Clicked="OnSaveActivated" />
 			

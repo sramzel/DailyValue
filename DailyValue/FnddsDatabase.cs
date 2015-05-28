@@ -9,9 +9,15 @@ namespace DailyValue
 			private set;
 		}
 
-		public FnddsDatabase (BaseParseStorage<MainFoodDesc> mfdStorage)
+		public BaseParseStorage<FoodWeights> FoodWeights {
+			get;
+			private set;
+		}
+
+		public FnddsDatabase (BaseParseStorage<MainFoodDesc> mfdStorage, BaseParseStorage<FoodWeights> fwStorage)
 		{
 			MainFoodDesc = mfdStorage;	
+			FoodWeights = fwStorage;	
 		}
 	}
 }

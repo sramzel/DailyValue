@@ -16,7 +16,7 @@ namespace DailyValue.iOS
 		public override async Task<List<M>> RefreshDataAsync()
 		{
 			var query = ParseObject.GetQuery (ClassName);
-			var ie = await query.Limit(20).FindAsync ();
+			var ie = await query.Limit(20).Include("foodDescription").FindAsync ();
 
 			var Items = new List<M> ();
 			foreach (var t in ie) {
@@ -34,7 +34,7 @@ namespace DailyValue.iOS
 		public override async Task<M> GetItemAsync(string id)
 		{
 			var query = ParseObject.GetQuery(ClassName).WhereEqualTo(ClassName, id);
-			var t = await query.FirstAsync();
+			var t = await query.Include("foodDescription").FirstAsync();
 			return From (new ParseObjectIOS(t));
 		}
 
