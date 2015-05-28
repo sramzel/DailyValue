@@ -7,18 +7,10 @@
     	<StackLayout VerticalOptions="StartAndExpand">
 
 	        <Label Text="Name" />
-	        <Entry Text="{Binding Path=Score}" x:Name="nameEntry" Placeholder="task name" />
+	        <Label Text="{Binding Path=FoodDescription.MainFoodDescription}"/>
 
-			<Label Text="Notes" />
-	        <Entry Text="{Binding Path=Score}" x:Name="notesEntry" />
-
-	        <Button Text="Save" Clicked="OnSaveActivated" />
-			
-			<Button Text="Delete" Clicked="OnDeleteActivated" />
-
-	        <Button Text="Cancel" Clicked="OnCancelActivated" />
-
-	        <Button Text="Speak" Clicked="OnSpeakActivated" />
+			<Label Text="Score" />
+	        <Label Text="{Binding Path=Score}"/>
 
         </StackLayout>
     </ContentPage.Content>
